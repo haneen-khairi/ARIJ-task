@@ -11,7 +11,94 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body {
+            background: #000;
+            color: #000;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
     <link rel="stylesheet" href="style/main.css">
     <title>ARIJ | SEO meta title</title>
 </head>
@@ -174,36 +261,303 @@
     </section>
     <section class="swip-mini-cards">
         <div class="mini-card-board">
-            
-        </div>
-        <div class="mini-card-box">
-            <div class="mini-card-title">
-                <p>اجباري على تقديم اجازه بدون راتب</p>
-            </div>
-            <div class="mini-icons-box">
-                <div class="mini-icon">
-                    <i class="fa-solid fa-utensils"></i> 
-                    <p>مطاعم</p>
-                    <div class="number">
-                        67
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="round-circle">
+                            <p>01</p>
+                            <p class="rounded-circle-p"> نوع الشكوى</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mini-icon">
-                    <i class="fa-solid fa-car"></i>
-                    <p>نقل سياحي</p>
-                    <div class="number">
-                        6
+                    <div class="swiper-slide">
+                        <div class="round-circle">02</div>
                     </div>
-                </div>
-                <div class="mini-icon"> 
-                    <i class="fa-solid fa-hotel"></i>
-                    <p>فنادق</p>
-                    <div class="number">
-                        32
+                    <div class="swiper-slide">
+                        <div class="round-circle">03</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="round-circle">04</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="round-circle">05</div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="group-boxes">
+                        <div class="mini-card-box">
+                            <div class="mini-card-title">
+                                <p>اجباري على تقديم اجازه بدون راتب</p>
+                            </div>
+                            <div class="mini-icons-box">
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <p>مطاعم</p>
+                                    <div class="number">
+                                        67
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                    <p>نقل سياحي</p>
+                                    <div class="number">
+                                        6
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    <p>فنادق</p>
+                                    <div class="number">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-card-box">
+                            <div class="mini-card-title">
+                                <p>اجباري على تقديم اجازه بدون راتب</p>
+                            </div>
+                            <div class="mini-icons-box">
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <p>مطاعم</p>
+                                    <div class="number">
+                                        67
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                    <p>نقل سياحي</p>
+                                    <div class="number">
+                                        6
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    <p>فنادق</p>
+                                    <div class="number">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-card-box">
+                            <div class="mini-card-title">
+                                <p>اجباري على تقديم اجازه بدون راتب</p>
+                            </div>
+                            <div class="mini-icons-box">
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <p>مطاعم</p>
+                                    <div class="number">
+                                        67
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                    <p>نقل سياحي</p>
+                                    <div class="number">
+                                        6
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    <p>فنادق</p>
+                                    <div class="number">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mini-card-box">
+                            <div class="mini-card-title">
+                                <p>اجباري على تقديم اجازه بدون راتب</p>
+                            </div>
+                            <div class="mini-icons-box">
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <p>مطاعم</p>
+                                    <div class="number">
+                                        67
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                    <p>نقل سياحي</p>
+                                    <div class="number">
+                                        6
+                                    </div>
+                                </div>
+                                <div class="mini-icon">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    <p>فنادق</p>
+                                    <div class="number">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="swiper-slide">
+                    <div class="mini-card-box">
+                        <div class="mini-card-title">
+                            <p>اجباري على تقديم اجازه بدون راتب</p>
+                        </div>
+                        <div class="mini-icons-box">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                                <p>مطاعم</p>
+                                <div class="number">
+                                    67
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>نقل سياحي</p>
+                                <div class="number">
+                                    6
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>فنادق</p>
+                                <div class="number">
+                                    32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-card-box">
+                        <div class="mini-card-title">
+                            <p>اجباري على تقديم اجازه بدون راتب</p>
+                        </div>
+                        <div class="mini-icons-box">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                                <p>مطاعم</p>
+                                <div class="number">
+                                    67
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>نقل سياحي</p>
+                                <div class="number">
+                                    6
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>فنادق</p>
+                                <div class="number">
+                                    32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mini-card-box">
+                        <div class="mini-card-title">
+                            <p>اجباري على تقديم اجازه بدون راتب</p>
+                        </div>
+                        <div class="mini-icons-box">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                                <p>مطاعم</p>
+                                <div class="number">
+                                    67
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>نقل سياحي</p>
+                                <div class="number">
+                                    6
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>فنادق</p>
+                                <div class="number">
+                                    32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mini-card-box">
+                        <div class="mini-card-title">
+                            <p>اجباري على تقديم اجازه بدون راتب</p>
+                        </div>
+                        <div class="mini-icons-box">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                                <p>مطاعم</p>
+                                <div class="number">
+                                    67
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>نقل سياحي</p>
+                                <div class="number">
+                                    6
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>فنادق</p>
+                                <div class="number">
+                                    32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mini-card-box">
+                        <div class="mini-card-title">
+                            <p>اجباري على تقديم اجازه بدون راتب</p>
+                        </div>
+                        <div class="mini-icons-box">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                                <p>مطاعم</p>
+                                <div class="number">
+                                    67
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>نقل سياحي</p>
+                                <div class="number">
+                                    6
+                                </div>
+                            </div>
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>فنادق</p>
+                                <div class="number">
+                                    32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
     </section>
     <!-- end section pg1 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -239,6 +593,33 @@
             // Re-check on window resize
             window.addEventListener('resize', toggleMenu);
         });  
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            freeMode: true,
+            watchSlidesProgress: true,
+            slidesPerView: 5,
+            loop: true,
+            centeredSlides: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 50,
+            slidesPerView: 1,
+            loop: true,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+
+        });
     </script>
 </body>
 </body>
