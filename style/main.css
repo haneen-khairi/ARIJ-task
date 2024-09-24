@@ -14,7 +14,18 @@ img {
 
 p {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 35px;
+    margin-bottom: 0rem;
+}
+
+
+section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #A0051B;
 }
 
 body {
@@ -54,7 +65,7 @@ header .menu-list li {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 
 .header-section {
@@ -81,13 +92,77 @@ header .menu-list li {
     color: #A0051B;
     position: relative;
     right: 0px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
+.title-box {
+    background-image: url(../img/title-box.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    position: relative;
+    right: 15%;
+    width: 100%;
+    max-width:400px;
+    height:100%;
+    max-height:400px;
+    top: 50%;
+    transform: translate(-15%, -50%);
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.soft-box {
+    position: absolute;
+    top:50%;
+    right: 20%;
+    transform: translate(0px,-50%);
+    color: #A0051B;
+    font-size: 25px;
+    text-wrap: wrap;
+    max-width:300px;
+    font-weight: 400;
+    animation: fadeIn;
+    animation-duration: 8s;
+}
+.name-box{
+    position: absolute;
+    top:85%;
+    right: 35%;
+    transform: translate(0px,-50%);
+    animation: fadeIn;
+    animation-duration: 8s;
+}
 .title-has-label::after {
     content: "";
     transform: rotate(145deg);
     position: absolute;
     top: 15px;
+    right: -20px;
+    background-color: #00000070;
+    width: 60px;
+    height: 20px; 
+}
+
+.box-has-label {
+    color: #fff;
+    background: #A0051BC9;   
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: fit-content;
+
+}
+
+.box-has-label::after {
+    content: "";
+    transform: rotate(145deg);
+    position: absolute;
+    top: 40px;
     right: -20px;
     background-color: #00000070;
     width: 60px;
@@ -212,35 +287,37 @@ header .menu-list li {
 
 .rounded-circle-p {
     display: none;
-    font-size:12px;
+    font-size: 12px;
 
 }
 
 .swiper-slide-thumb-active .rounded-circle-p {
     display: flex;
 }
-.mini-card-box{
+
+.mini-card-box {
     position: relative;
     display: flex;
     align-items: center;
     width: fit-content;
     justify-content: center;
-    height:400px;
+    height: 400px;
     overflow: hidden;
-    margin:10px 20px;
+    margin: 10px 20px;
 }
+
 .mini-card-title {
     background-color: #fff;
-position: absolute;
-width:75%;
-top:20px;
-color: #A0051B;
-padding:40px 10px;
-text-align: center;
-border-radius: 5px;
-box-shadow: 0px 0px 5px #f2f2f2;
-z-index: 2;
-font-weight:500;
+    position: absolute;
+    width: 75%;
+    top: 20px;
+    color: #A0051B;
+    padding: 40px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #f2f2f2;
+    z-index: 2;
+    font-weight: 500;
 }
 
 .mini-icons-box {
@@ -251,12 +328,13 @@ font-weight:500;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    padding:150px 20px 20px 20px;
+    padding: 150px 20px 20px 20px;
     border-radius: 10px;
     z-index: 0;
-  border-bottom: 1px solid  #99061c;
+    border-bottom: 1px solid #99061c;
 }
-.mini-icons-box::after{
+
+.mini-icons-box::after {
     content: "";
     position: absolute;
     bottom: -25px;
@@ -266,64 +344,251 @@ font-weight:500;
     height: 150px;
     transform: skewY(339deg);
     border-radius: 12px;
-    z-index:-1;
-} 
+    z-index: -1;
+}
+
 .mini-icon {
     display: flex;
-    padding:10px 20px;
-    color:#fff; 
+    padding: 10px 20px;
+    color: #fff;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     border-left: 1px solid #fff;
-    width:fit-content;
+    width: fit-content;
 }
-.mini-icon:last-child{
+
+.mini-icon:last-child {
     border-left: 0px;
 }
-.mini-icon i{
+
+.mini-icon i {
     font-size: 22px;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     z-index: 2;
 }
 
-.mini-icon .number{
-font-weight: 700;
-z-index: 2;
+.mini-icon .number {
+    font-weight: 700;
+    z-index: 2;
 }
-.mini-icon p{
-    font-size:10px;
+
+.mini-icon p {
+    font-size: 10px;
     font-weight: 300;
     z-index: 2;
 }
-.group-boxes{
-    display: flex; 
+
+.group-boxes {
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
 }
 
+.total-count {
+    position: relative;
+    margin: 10px auto;
+    width: fit-content;
+    padding-right: 130px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    background: linear-gradient(180deg, #A0051B 0%, #B00019 100%);
+    border-radius: 10px;
+}
 
+.total-count-title {
+    background-color: #fff;
+    color: #A0051B;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    right: -50px;
+    top: 10px;
+    box-shadow: 3px 0px 5px #c2c2c2;
+    font-weight: 600;
+    font-size: 14px;
+}
 
+.total-count-details, .total-box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
 
+.total-count-details {
+    gap: 1rem;
+}
 
+.total-mini-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
 
+}
 
+.total-mini-title p {
+    font-size: 10px;
+    font-weight: 300;
+    z-index: 2;
+    margin-bottom: 0px;
+}
 
+.total-mini-title i {
+    font-size: 20px;
+}
 
+.total-count p, .total-count span, .total-count i {
+    color: #fff;
+}
 
+.bold-text {
+    color: #1C1A1A;
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 600;
+}
 
+article {
+    margin-bottom: 25px;
+}
 
+.box-image-content {
+    background-image: url(../img/box-image.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 700px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    padding: 45px 65px;
+}
 
+.box-content-logo {
+    max-width: 100px;
+    width: 100%;
+    margin-top: 45px;
+}
 
+.light-red-box {
+    background: #A0051B;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0px auto;
+}
 
+.light-red-box i {
+    background: #fff;
+    color: #A0051B;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
 
+.blood-test-section strong {
+    color: #A0051B;
+}
 
+.blood-test-section2 {
+    background-image: url(../img/petra-2.jpg);
+    color: #ffff;
+}
 
+.box-image-content2 {
+    background-image: url(../img/box3.png);
+    text-align: right;
+    background-size: 100% 150%;
+    padding: 30px 65px;
+    margin: 40px auto;
+}
 
+.blood-test-section3 {
+    background-image: url(../img/box4.png);
+    color: #ffff;
+}
+
+.blood-test-section3 .title-has-label {
+    color: #ffff;
+    margin: 25px 0px;
+}
+
+.red-box {
+    background: #A0051B;
+    width: 100%;
+    padding: 15px 45px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+
+}
+
+.grid-collection {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.box-notes {
+    text-align: right;
+}
+
+.two-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.box-number1 p, .box-number2 p, .box-number3 p {
+    background-color: #fff;
+    color: #A0051B;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.box-number1, .box-number2 {
+    min-height: 180px;
+}
 
 
 
